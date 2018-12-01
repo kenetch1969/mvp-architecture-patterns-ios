@@ -12,6 +12,14 @@
 		42542AE321970F3600F35962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42542AE121970F3600F35962 /* Main.storyboard */; };
 		42542AE521970F3800F35962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42542AE421970F3800F35962 /* Assets.xcassets */; };
 		42542AE821970F3800F35962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42542AE621970F3800F35962 /* LaunchScreen.storyboard */; };
+		42542AF421970FD200F35962 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AF321970FD200F35962 /* Staff.swift */; };
+		42542AF62197105A00F35962 /* StaffService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AF52197105A00F35962 /* StaffService.swift */; };
+		42542AF8219712F500F35962 /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AF7219712F400F35962 /* StaffView.swift */; };
+		42542AFA2197162D00F35962 /* StaffPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AF92197162D00F35962 /* StaffPresenter.swift */; };
+		42542AFC21971EB600F35962 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AFB21971EB600F35962 /* LoginViewController.swift */; };
+		42542AFE21971F6B00F35962 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542AFD21971F6B00F35962 /* LoginView.swift */; };
+		42542B012197202000F35962 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542B002197202000F35962 /* BasePresenter.swift */; };
+		42542B032197208100F35962 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42542B022197208100F35962 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		42542AE421970F3800F35962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42542AE721970F3800F35962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42542AE921970F3800F35962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42542AF321970FD200F35962 /* Staff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		42542AF52197105A00F35962 /* StaffService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffService.swift; sourceTree = "<group>"; };
+		42542AF7219712F400F35962 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
+		42542AF92197162D00F35962 /* StaffPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPresenter.swift; sourceTree = "<group>"; };
+		42542AFB21971EB600F35962 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		42542AFD21971F6B00F35962 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		42542B002197202000F35962 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		42542B022197208100F35962 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,62 @@
 		42542ADC21970F3600F35962 /* mvp-architecture-patterns-ios */ = {
 			isa = PBXGroup;
 			children = (
+				42542AFF21971FFC00F35962 /* Base */,
+				42542AEF21970F5300F35962 /* service */,
+				42542AF021970F6600F35962 /* presenter */,
+				42542AF121970F7400F35962 /* model */,
+				42542AF221970F7D00F35962 /* view */,
 				42542ADD21970F3600F35962 /* AppDelegate.swift */,
 				42542ADF21970F3600F35962 /* ViewController.swift */,
 				42542AE121970F3600F35962 /* Main.storyboard */,
 				42542AE421970F3800F35962 /* Assets.xcassets */,
 				42542AE621970F3800F35962 /* LaunchScreen.storyboard */,
 				42542AE921970F3800F35962 /* Info.plist */,
+				42542AFB21971EB600F35962 /* LoginViewController.swift */,
 			);
 			path = "mvp-architecture-patterns-ios";
+			sourceTree = "<group>";
+		};
+		42542AEF21970F5300F35962 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				42542AF52197105A00F35962 /* StaffService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		42542AF021970F6600F35962 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				42542AF92197162D00F35962 /* StaffPresenter.swift */,
+				42542B022197208100F35962 /* LoginPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		42542AF121970F7400F35962 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				42542AF321970FD200F35962 /* Staff.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		42542AF221970F7D00F35962 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				42542AF7219712F400F35962 /* StaffView.swift */,
+				42542AFD21971F6B00F35962 /* LoginView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		42542AFF21971FFC00F35962 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				42542B002197202000F35962 /* BasePresenter.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42542B012197202000F35962 /* BasePresenter.swift in Sources */,
+				42542AFC21971EB600F35962 /* LoginViewController.swift in Sources */,
+				42542AF421970FD200F35962 /* Staff.swift in Sources */,
+				42542AF8219712F500F35962 /* StaffView.swift in Sources */,
+				42542B032197208100F35962 /* LoginPresenter.swift in Sources */,
 				42542AE021970F3600F35962 /* ViewController.swift in Sources */,
+				42542AF62197105A00F35962 /* StaffService.swift in Sources */,
 				42542ADE21970F3600F35962 /* AppDelegate.swift in Sources */,
+				42542AFE21971F6B00F35962 /* LoginView.swift in Sources */,
+				42542AFA2197162D00F35962 /* StaffPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
